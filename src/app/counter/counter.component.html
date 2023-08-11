@@ -1,0 +1,12 @@
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-2" >
+        <button type="button" class="btn btn-outline-primary" routerLink="/home">Go Back</button>
+    </div>
+    <div class="text-center mb-4">
+        <h2 class="animate__animated animate__flash animate__infinite" style="color: blue;">"Vote for your favorite celebrity."</h2>
+    </div>
+    <div class="card-group">
+        <app-link *ngFor="let link of links" [imageURL]="link"></app-link>
+    </div>
+
+

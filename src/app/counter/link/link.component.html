@@ -1,0 +1,18 @@
+<div class="container" class="animate__animated animate__backInDown">
+    <div class="animate__animated animate__tada animate__repeat-2 animate__delay-2s ">
+        <div class="card border-primary card me-3 mt-3 text-center" (mouseenter)="onCardHover()" (mouseleave)="onCardLeave()">
+            <figure class="card-header">
+                <img src="{{imageURL.imageURL}}" style="height: 200px; width: 180px; border-radius: 15px; border-color: 2px solid rgb(20, 79, 241);">
+            </figure>
+            <span class="blockquote" style="color: blue;font-family: fantasy;">{{imageURL.title}}</span>
+            <div class="card border-primary card-body">
+                Points:
+                <h3 class="display-4">{{imageURL.votes}}</h3>
+            </div>
+            <div class="card-footer mb-3">
+                <button class="btn btn-outline-primary me-2" (click)="imageURL.voteUp()">Up</button>
+                <button class="btn btn-outline-danger " (click)="imageURL.voteDown()">Down</button>
+            </div>
+        </div>
+    </div>
+</div>
